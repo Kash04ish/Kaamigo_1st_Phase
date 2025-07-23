@@ -134,7 +134,11 @@ const LandingPage = () => {
         </div>
 
         <div className="flex justify-center flex-wrap gap-4">
-          <button className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition transform hover:scale-105 shadow">
+          <button 
+          href="https://expo.dev/accounts/ariifff/projects/kaamigo/builds/39b66d65-8ebd-49aa-ae06-15ca65599cdb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition transform hover:scale-105 shadow">
             📥 Download the App
           </button>
           <button className="border-2 border-purple-600 text-purple-700 px-6 py-3 rounded-lg hover:bg-purple-100 transition transform hover:scale-105 shadow">
@@ -269,7 +273,11 @@ const LandingPage = () => {
           </p>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow">
+            <button 
+            href="https://expo.dev/accounts/ariifff/projects/kaamigo/builds/39b66d65-8ebd-49aa-ae06-15ca65599cdb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow">
               📱 Android App
             </button>
             <button className="border-2 border-purple-600 text-purple-700 px-6 py-3 rounded-lg hover:bg-purple-100 transition-all duration-200 transform hover:scale-105 shadow">
