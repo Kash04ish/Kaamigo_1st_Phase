@@ -1,0 +1,1 @@
+// Supabase utilities for backend
