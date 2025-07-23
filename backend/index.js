@@ -7,6 +7,8 @@ const serverConfig = require("./config/server");
 
 // Load environment variables - load from parent directory where .env is located
 dotenv.config({ path: "../.env" });
+require('dotenv').config();
+console.log("🧪 FIREBASE_SERVICE_ACCOUNT env:", process.env.FIREBASE_SERVICE_ACCOUNT);
 
 const app = express();
 const PORT = serverConfig.PORT;
