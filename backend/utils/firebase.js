@@ -2,7 +2,7 @@ const admin = require("firebase-admin");
 
 // Initialize Firebase Admin SDK
 const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT
-  ? JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT
+  ? JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
   : require('../config/credentials/firebase-service-account.json');
 
 // Initialize Firebase Admin
