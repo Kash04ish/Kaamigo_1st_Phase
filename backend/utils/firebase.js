@@ -1,22 +1,11 @@
+require('dotenv').config(); // ← Make sure this is FIRST
+
 const admin = require("firebase-admin");
 
-// Initialize Firebase Admin SDK - Only from environment variables
-if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
-  throw new Error("FIREBASE_SERVICE_ACCOUNT environment variable is required");
-}
+// Initialize Firebase Admin SDK
+const serviceAccount = require('../config/credentials/firebase-service-account.json');
 
-// Parse the service account (no need for newline replacement since it's properly escaped)
-let serviceAccount;
-try {
-  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-  console.log(
-    "🧪 Firebase initialized with project:",
-    serviceAccount.project_id
-  );
-} catch (error) {
-  console.error("❌ Error parsing FIREBASE_SERVICE_ACCOUNT:", error.message);
-  throw new Error("Invalid FIREBASE_SERVICE_ACCOUNT format");
-}
+console.log("Raw ENV Value:", process.env.FIREBASE_SERVICE_ACCOUNT);
 
 // Initialize Firebase Admin
 if (!admin.apps.length) {
